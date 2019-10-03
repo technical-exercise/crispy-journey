@@ -1,0 +1,53 @@
+---
+date: 2019-10-03
+---
+
+# Tech notes
+
+  - Were there any assessments regarding the effectiveness of these
+    facial recognition deployments before procurement? If not, will
+    there be any assessments regarding the effectiveness of these facial
+    recognition deployments after procurement?
+
+  - How do these agencies plan to measure the success or failure of a
+    facial recognition deployment?
+
+  - The `AWS Rekognition` documentation talks about use by law
+    enforcement:
+    
+    > When you use facial recognition in law enforcement scenarios, you
+    > should use confidence thresholds of 99% or higher and not make
+    > decisions based solely on the predictions returned from facial
+    > recognition software. A human should confirm facial recognition
+    > software predictions and also ensure that a person’s civil rights
+    > aren’t violated.
+    
+    As far as I can tell, there's no connection between these
+    recommendations and AWS terms of use. These recommendations could
+    potentially be used for non-liability by AWS.
+    
+    Do the providers that have been contracted issue similar
+    recommendations?
+
+  - Have the systems been optimized in any way for Mexican data? For
+    instance, how good are they at working with indigenous / native
+    faces?
+
+  - Are there any plans to re-train the models with for instance
+    indigenous / native faces? If so, where will these training sets
+    come from? Will the training sets, or the re-trained models be
+    shared back with the providers that have been contracted?
+
+  - On the internet there's general guidelines and specifications for
+    video that's going to be used in facial recognition. For instance:
+    <https://www.quora.com/What-quality-of-image-should-be-used-in-face-recognition-so-that-processing-does-not-get-slow>
+    
+    In what ways do the cameras that are going to be used comply with
+    these type of recommendations?
+
+  - I still have to think about the differences between the *Celebrity
+    Recognition* and *Face Search* products. Still, in my tests I have
+    found that *Celebrity Recognition* fails to detect the Mexican
+    celebrities in the following photos:
+    <https://upload.wikimedia.org/wikipedia/commons/1/14/Paloma_Cordero_Nancy_Reagan_Mexico_City_1985_earthquake.jpg>
+    <http://www.gstatic.com/tv/thumb/persons/1181156/1181156_v9_ba.jpg>
