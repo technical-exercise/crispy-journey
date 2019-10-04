@@ -1,20 +1,19 @@
 ---
-date: 2019-10-03
+date: 2019-10-04
 ---
 
 # Tech notes
 
-  - Taking a cue from the XXX report, we could think about testing.
-    Before procurement, were any assessments made as regards the effectiveness of these
-    a possible facial recognition deployment? If not, will
-    there be any assessments regarding the effectiveness of these facial
-    recognition deployments after procurement?
+  - Before procurement, was there any testing as regards the effectiveness 
+    of a possible facial recognition deployment? Will there be any such testing
+    after contracts have been awarded?
 
-  - How do these agencies plan to measure the success or failure of a
-    facial recognition deployment? Do they have any plans for benchmarking?
+  - Do these government agencies have any metrics for measuring the success
+    or failure of facial recognition technology? Here I'm not thinking about benchmarks
+    like the NIST's [vendor test](https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt-ongoing),
+    but rather about the evaluation of specific facial recognition deployments.
 
-  - The `AWS Rekognition` documentation talks about use by law
-    enforcement:
+  - The *AWS Rekognition* documentation includes recommendations for law enforcement:
     
     > When you use facial recognition in law enforcement scenarios, you
     > should use confidence thresholds of 99% or higher and not make
@@ -23,33 +22,32 @@ date: 2019-10-03
     > software predictions and also ensure that a person’s civil rights
     > aren’t violated.
     
-    As far as I can tell, there's no connection between these
-    recommendations and AWS terms of use. These recommendations could
+    As far as I can tell, there's no connection between these paragraphs from the
+    AWS documentation and the AWS terms of use. These recommendations could
     potentially be used for non-liability by AWS.
     
-    Do the providers that have been contracted issue similar
+    Do the providers of facial recognition technology that have been contracted issue similar
     recommendations?
 
   - Have the systems been optimized in any way for their use in Mexico? For
     instance, how good are they at working with Mexican indigenous / native
     faces?
 
-  - Are there any plans to re-train the models with for instance
-    indigenous / native faces? If so, where will these training sets
+  - Are there any plans to re-train the models with faces of Mexican citizens?
+    If so, where will these training sets
     come from? Will the training sets, or the re-trained models be
-    shared back with the providers that have been contracted?
+    shared back with the facial recognition providers that have been contracted?
 
-  - On the internet there's general guidelines and specifications for
-    video that's going to be used in facial recognition. For instance:
+  - On the internet there's general specifications for
+    video and facial recognition. For instance:
     <https://www.quora.com/What-quality-of-image-should-be-used-in-face-recognition-so-that-processing-does-not-get-slow>
     
-    In what ways do the cameras that are going to be used comply with
-    these type of recommendations?
+    Does the CCTV camera refurbishment take these types of recommendations
+    into account?
 
   - I still have to think about the differences between the AWS *Celebrity
     Recognition* and *Face Search* products. Still, in my tests I have
     found that *Celebrity Recognition* fails to detect the Mexican
     celebrities in the following photos:
-    <https://upload.wikimedia.org/wikipedia/commons/1/14/Paloma_Cordero_Nancy_Reagan_Mexico_City_1985_earthquake.jpg>
     <http://www.gstatic.com/tv/thumb/persons/1181156/1181156_v9_ba.jpg>
-    <https://televisa.brightspotcdn.com/98/8d/2b72f51e490e91734509a5f3cbcd/05angelicarivera.jpg>
+    <https://upload.wikimedia.org/wikipedia/commons/1/14/Paloma_Cordero_Nancy_Reagan_Mexico_City_1985_earthquake.jpg>
